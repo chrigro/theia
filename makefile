@@ -51,28 +51,28 @@ clean-build:
 
 # tests
 test-optics:
-	@cd tests ; python test_optics.py
+	@cd tests ; python2 test_optics.py
 
 test-rendering:
-	@cd tests ; python test_rendering.py
+	@cd tests ; python2 test_rendering.py
 
 test-tree:
-	@cd tests ; pythontest_tree.py
+	@cd tests ; python2test_tree.py
 
 test-simulation:
-	@cd tests ; python test_simulation.py
+	@cd tests ; python2 test_simulation.py
 
 test-syntax:
-	@cd tests ; python test_syntax.py
+	@cd tests ; python2 test_syntax.py
 
 test-geo:
-	@cd tests ; python test_geometry.py
+	@cd tests ; python2 test_geometry.py
 
 test-plain:
-	@cd tests ; python test_plain.py
+	@cd tests ; python2 test_plain.py
 
 test-regex:
-	@cd tests ; python test_regex.py
+	@cd tests ; python2 test_regex.py
 
 #compile pdf (do it twice for all the refs to fall into place)
 compile-pdf:
@@ -103,7 +103,7 @@ epydoc-html:
 
 #build theia
 build-theia:
-	@python setup.py install --user
+	@python2 setup.py install --user
 
 #build documentation
 build-doc: compile-pdf copy-pdf
